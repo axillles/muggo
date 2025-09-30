@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct CoffeeAppApp: App {
+    init() {
+        FirebaseManager.configureIfNeeded()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoffeeShopsView()
         }
     }
 }

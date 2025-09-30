@@ -1,0 +1,16 @@
+PODS:
+  - YandexMapsMobile (4.4.0-full)
+
+DEPENDENCIES:
+  - YandexMapsMobile (= 4.4.0-full)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - YandexMapsMobile
+
+SPEC CHECKSUMS:
+  YandexMapsMobile: a76ddceccf2d78f9f1034d07a354810cd21ef21a
+
+PODFILE CHECKSUM: 5b7bc2e3ae8b3d0f774e5d2e077cb9c6d0fb3742
+
+COCOAPODS: 1.16.2

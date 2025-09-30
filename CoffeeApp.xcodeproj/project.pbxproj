@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		62DB14612DB691A50059CEDC /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 62DB14602DB691A50059CEDC /* Auth */; };
+		62DB14632DB691A50059CEDC /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 62DB14622DB691A50059CEDC /* Functions */; };
+		62DB14652DB691A50059CEDC /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 62DB14642DB691A50059CEDC /* PostgREST */; };
+		62DB14672DB691A50059CEDC /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 62DB14662DB691A50059CEDC /* Realtime */; };
+		62DB14692DB691A50059CEDC /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 62DB14682DB691A50059CEDC /* Storage */; };
+		62DB146B2DB691A50059CEDC /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 62DB146A2DB691A50059CEDC /* Supabase */; };
+		E08ED1DE3302FBCE45ACD72C /* Pods_CoffeeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC07C9694B63198789EB3C6 /* Pods_CoffeeApp.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		62DB142C2DB685430059CEDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +37,9 @@
 		62DB141B2DB685410059CEDC /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DB142B2DB685430059CEDC /* CoffeeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DB14352DB685430059CEDC /* CoffeeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC07C9694B63198789EB3C6 /* Pods_CoffeeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF575DF39C2DC504B1E37D0A /* Pods-CoffeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeApp.release.xcconfig"; path = "Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp.release.xcconfig"; sourceTree = "<group>"; };
+		D4F9A6BC5F7F77B48D16805F /* Pods-CoffeeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeApp.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +65,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DB14652DB691A50059CEDC /* PostgREST in Frameworks */,
+				62DB14632DB691A50059CEDC /* Functions in Frameworks */,
+				62DB146B2DB691A50059CEDC /* Supabase in Frameworks */,
+				62DB14612DB691A50059CEDC /* Auth in Frameworks */,
+				62DB14692DB691A50059CEDC /* Storage in Frameworks */,
+				62DB14672DB691A50059CEDC /* Realtime in Frameworks */,
+				E08ED1DE3302FBCE45ACD72C /* Pods_CoffeeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +99,8 @@
 				62DB142E2DB685430059CEDC /* CoffeeAppTests */,
 				62DB14382DB685430059CEDC /* CoffeeAppUITests */,
 				62DB141C2DB685410059CEDC /* Products */,
+				674CF808394E4C425D1291DA /* Pods */,
+				B5304A58A9A8E84312235A22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +114,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		674CF808394E4C425D1291DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4F9A6BC5F7F77B48D16805F /* Pods-CoffeeApp.debug.xcconfig */,
+				CF575DF39C2DC504B1E37D0A /* Pods-CoffeeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5304A58A9A8E84312235A22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBC07C9694B63198789EB3C6 /* Pods_CoffeeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62DB143F2DB685430059CEDC /* Build configuration list for PBXNativeTarget "CoffeeApp" */;
 			buildPhases = (
+				B17BD395FBEEFDF4E8405AAB /* [CP] Check Pods Manifest.lock */,
 				62DB14172DB685410059CEDC /* Sources */,
 				62DB14182DB685410059CEDC /* Frameworks */,
 				62DB14192DB685410059CEDC /* Resources */,
+				5FF38911606E8CD7873E6645 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +153,12 @@
 			);
 			name = CoffeeApp;
 			packageProductDependencies = (
+				62DB14602DB691A50059CEDC /* Auth */,
+				62DB14622DB691A50059CEDC /* Functions */,
+				62DB14642DB691A50059CEDC /* PostgREST */,
+				62DB14662DB691A50059CEDC /* Realtime */,
+				62DB14682DB691A50059CEDC /* Storage */,
+				62DB146A2DB691A50059CEDC /* Supabase */,
 			);
 			productName = CoffeeApp;
 			productReference = 62DB141B2DB685410059CEDC /* CoffeeApp.app */;
@@ -134,8 +181,6 @@
 				62DB142E2DB685430059CEDC /* CoffeeAppTests */,
 			);
 			name = CoffeeAppTests;
-			packageProductDependencies = (
-			);
 			productName = CoffeeAppTests;
 			productReference = 62DB142B2DB685430059CEDC /* CoffeeAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +202,6 @@
 				62DB14382DB685430059CEDC /* CoffeeAppUITests */,
 			);
 			name = CoffeeAppUITests;
-			packageProductDependencies = (
-			);
 			productName = CoffeeAppUITests;
 			productReference = 62DB14352DB685430059CEDC /* CoffeeAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -195,6 +238,9 @@
 			);
 			mainGroup = 62DB14122DB685410059CEDC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				62DB145E2DB691070059CEDC /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 62DB141C2DB685410059CEDC /* Products */;
 			projectDirPath = "";
@@ -230,6 +276,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FF38911606E8CD7873E6645 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B17BD395FBEEFDF4E8405AAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoffeeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62DB14172DB685410059CEDC /* Sources */ = {
@@ -390,6 +478,7 @@
 		};
 		62DB14402DB685430059CEDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F9A6BC5F7F77B48D16805F /* Pods-CoffeeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,6 +508,7 @@
 		};
 		62DB14412DB685430059CEDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF575DF39C2DC504B1E37D0A /* Pods-CoffeeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -558,6 +648,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62DB145E2DB691070059CEDC /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62DB14602DB691A50059CEDC /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62DB145E2DB691070059CEDC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		62DB14622DB691A50059CEDC /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62DB145E2DB691070059CEDC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		62DB14642DB691A50059CEDC /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62DB145E2DB691070059CEDC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		62DB14662DB691A50059CEDC /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62DB145E2DB691070059CEDC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		62DB14682DB691A50059CEDC /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62DB145E2DB691070059CEDC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		62DB146A2DB691A50059CEDC /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62DB145E2DB691070059CEDC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 62DB14132DB685410059CEDC /* Project object */;
 }
